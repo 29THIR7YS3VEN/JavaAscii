@@ -1,8 +1,11 @@
 public class AsciiValue {
 
     public static void main(String[] args) {
-
-        char ch = 'a';
+        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Enter character ");
+        char input = myObj.nextChar();
+        
+        char ch = input;
         int ascii = ch;
         // You can also cast char to int
         int castAscii = (int) ch;
